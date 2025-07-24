@@ -110,7 +110,3 @@ resume-analyzer/
 3. **View History**:
    - Go to the "History" tab to see all previously uploaded resumes
    - Click "View Details" on any resume to see its full analysis
-
-## License
-
-MIT
