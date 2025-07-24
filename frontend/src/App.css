@@ -1,0 +1,164 @@
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f4fa;
+  color: #2d2d2d;
+}
+
+.App-header {
+  background: linear-gradient(135deg, #7f5af0, #dcb0ff);
+  color: white;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.App-header h1 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.App-header p {
+  margin-top: 0.75rem;
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.tabs-container {
+  flex: 1;
+  padding: 2rem 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #e3d6f5;
+}
+
+.tab {
+  padding: 1rem 2rem;
+  background: none;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #7a6790;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  background-color: transparent;
+}
+
+.tab:hover {
+  color: #7f5af0;
+}
+
+.tab.active {
+  color: #7f5af0;
+}
+
+.tab.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #7f5af0;
+  border-radius: 2px;
+}
+
+.tab-content {
+  padding: 1.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.App-footer {
+  background-color: #2e164d;
+  color: #ddd;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.3px;
+  margin-top: 2rem;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+}
+
+.App-footer p {
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Buttons for confirmation modal */
+.confirm-btn, .cancel-btn {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  font-weight: 600;
+}
+
+.confirm-btn {
+  background: linear-gradient(135deg, #7f5af0, #c084fc);
+  color: white;
+  box-shadow: 0 4px 8px rgba(127, 90, 240, 0.3);
+}
+
+.confirm-btn:hover {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #6a44e5, #b675f9);
+}
+
+.cancel-btn {
+  background-color: #f44336;
+  color: white;
+  margin-left: 1rem;
+  box-shadow: 0 4px 8px rgba(244, 67, 54, 0.3);
+}
+
+.cancel-btn:hover {
+  background-color: #d32f2f;
+  transform: scale(1.03);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .App-header {
+    padding: 2rem 1rem;
+  }
+
+  .App-header h1 {
+    font-size: 2rem;
+  }
+
+  .tabs-container {
+    padding: 1rem;
+  }
+
+  .tab {
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .tab-content {
+    padding: 1rem;
+  }
+
+  .confirm-btn, .cancel-btn {
+    font-size: 0.9rem;
+    padding: 0.6rem 1.2rem;
+  }
+}
