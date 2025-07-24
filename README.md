@@ -9,6 +9,8 @@ A full-stack web application that analyzes resumes using AI, extracts key inform
 - **AI Feedback**: Get ratings, improvement suggestions, and skill recommendations
 - **History Tracking**: View all previously uploaded resumes and their analyses
 
+![App Screenshot](https://github.com/sweathabalaji/Resume_analyser/blob/main/screenshots/Screenshot%202025-07-24%20at%209.02.10%20PM.png?raw=true)
+
 ## Technology Stack
 
 - **Frontend**: React.js
