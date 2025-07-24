@@ -1,0 +1,22 @@
+{
+  "name": "resume-analyzer",
+  "version": "1.0.0",
+  "description": "A full-stack web application that analyzes resumes using AI",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"cd backend && npm run dev\" \"cd frontend && npm start\"",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "init-db": "cd backend && npm run init-db"
+  },
+  "keywords": [
+    "resume",
+    "analyzer",
+    "ai",
+    "gemini"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
